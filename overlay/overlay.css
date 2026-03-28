@@ -2,31 +2,32 @@ body {
 margin: 0;
 padding: 0;
 background: transparent;
+overflow: hidden;
 font-family: Arial, sans-serif;
 }
 
 .overlay {
-position: fixed;
+position: absolute;
 bottom: 20px;
 left: 50%;
 transform: translateX(-50%);
-width: 90%;
-max-width: 1200px;
+width: 95%;
+max-width: 1400px;
 
-
+```
 display: flex;
 justify-content: space-between;
 align-items: center;
 
 background: rgba(0, 0, 0, 0.85);
-border-radius: 10px;
-padding: 15px;
+padding: 12px 20px;
+border-radius: 12px;
 color: white;
-
+```
 
 }
 
-/* Team Section */
+/* Team section */
 .team {
 display: flex;
 align-items: center;
@@ -51,41 +52,22 @@ margin: 0;
 font-size: 16px;
 }
 
-/* Center Section */
+/* Center */
 .center {
 text-align: center;
+min-width: 300px;
 }
 
 .batsman {
 font-size: 16px;
-margin: 3px 0;
 }
 
 .bowler {
-margin-top: 5px;
 font-size: 15px;
+margin-top: 5px;
 }
 
 .runrate {
+font-size: 14px;
 margin-top: 5px;
-font-size: 15px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-
-
-.overlay {
-    flex-direction: column;
-    gap: 10px;
-}
-
-.team img {
-    width: 40px;
-    height: 40px;
-}
-
-.team-info h2 {
-    font-size: 16px;
-}
 }
